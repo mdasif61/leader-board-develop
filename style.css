@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Comfortaa:wght@300&family=Lobster&family=Merriweather&family=Poppins:wght@500&family=Work+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+}
+/* navbar design start */
+header{
+    background-color: #562EFF;
+    height: 95px;
+    width:100%;
+}
+header nav{
+    width:1000px;
+    height: 100%;
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo img{
+    width:40px;
+    height: 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color:white;
+}
+.logo span{
+    margin-left: 15px;
+    font-size: 25px;
+}
+.manu{
+    display: flex;
+}
+.manu img{
+    border:2px solid white;
+    border-radius: 50%;
+}
+.manu img:hover{
+    border:2px solid rgb(73, 158, 255);
+    border-radius: 50%;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+.manu ul{
+    display: flex;
+    color:white;
+    cursor: pointer;
+}
+.manu ul li{
+    list-style: none;
+    margin:0 36px;
+    font-size: 16px;
+}
+/* navbar design end */
+main{
+    display: flex;
+    justify-content: center;
+    margin-top:36px;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.container{
+    width:1000px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+.player-title{
+    font-size: 25px;
+    color:#562EFF;
+    margin-top:-5px;
+}
+.players img{
+    width:56px;
+    height: 56px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player h3{
+    font-size: 16px;
+    margin-left: 16px;
+}
+hr{
+    margin-top:30px;
+    border-bottom: none;
+    border:1px solid #D1D1D1;
+    margin-bottom: 26px;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+article img{
+    width:250px;
+}
+.blog{
+    display: flex;
+    gap:20px;
+}
+.blog-heading{
+    font-size: 24px;
+    color:#562EFF;
+}
+.blog a{
+    text-decoration: none;
+    color:#562EFF;
+}
+.blog-focus{
+    font-size: 20px;
+}
+.blog-title{
+    color:#9F9F9F;
+    font-size: 16px;
+    margin-top:-20px;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:10px;
+}
+.course{
+    background:linear-gradient(to right,transparent,rgba(255, 0, 0, 0.123));
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.2s;
+}
+.course:hover{
+    background:white;
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.13);
+}
+.thambnail img{
+    width:300px;
+}
+.author a{
+    text-decoration: none;
+}
+.author{
+    margin-top:-15px;
+    font-size: 16px;
+}
+.c-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.r-point{
+    background-color: rgb(255, 255, 255);
+    border:1px solid rgb(255, 193, 23);
+    padding: 10px;
+    border-radius: 50px;
+}
+.fill{
+    color:goldenrod;
+}
+.duration{
+    background-color:rgba(255, 149, 193, 0.288);
+    width:100px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.empty{
+    color: #AEAEAE;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+    header nav{
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+    .manu{
+        flex-direction: column;
+        align-items: center;
+        margin:0px;
+    }
+    .manu ul{
+        padding: 0px;
+    }
+    ul li{
+        background-color: rgba(3, 2, 56, 0.26);
+        padding: 5px;
+        width:70px;
+        border-radius: 5px;
+    }
+
+    .container{
+        width:100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+    }
+    .top-player{
+        text-align: center;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .player h3{
+        margin:0px;
+        margin-top:5px;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        text-align: center;
+    }
+    .blog{
+        flex-direction: column;
+    }
+}
