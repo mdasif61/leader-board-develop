@@ -237,7 +237,27 @@ article img{
         justify-items: center;
         text-align: center;
     }
+    .blog-heading{
+        text-align: center;
+    }
     .blog{
         flex-direction: column;
+    }
+    .blog-focus{
+        margin-top:-15px;
+    }
+    .courses{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap:10px;
+    }
+    .course{
+        width:80%;
+        margin:auto;
+    }
+    .course img{
+        width:100%;
+    }
+    *{
+        box-sizing: border-box;
     }
 }
